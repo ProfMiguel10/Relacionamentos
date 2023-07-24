@@ -1,0 +1,67 @@
+Associação Bidirecional 1 - 1
+
+public class A {
+ private B b;
+}
+
+public class B {
+ private A a;
+}
+
+Associação Bidirecional 1 - 1..*
+
+public class A {
+ private B[] b;
+}
+
+
+public class B {
+ private A a;
+}
+
+Associação Bidirecional 1..* - 1..*
+
+public class C {
+ private A a;
+ private B b;
+}
+
+public class A {
+ private C[] lista;
+}
+
+public class B {
+ private C[] lista;
+}
+
+Associação Unidirecional 1 - 1
+
+public class A {
+ private B b;
+}
+
+Associação Unidirecional 1 - 1..*
+
+public class A {
+ private B[] b;
+}
+
+
+Herança
+
+public class B{
+//código
+}
+
+public class A extends B{
+
+}
+Implementação(Realização)
+
+public interface B{
+//código
+}
+
+public class A implements B{
+
+}
