@@ -1,0 +1,27 @@
+package exemplos;
+
+import java.util.LinkedList;
+
+public class Aluno {
+	private LinkedList<Inscricao> lista;
+}
+
+
+public class Professor {
+	private LinkedList<Turma> lista;
+
+}
+
+
+public class Turma {
+	private LinkedList<Inscricao> lista;
+	private Disciplina d;
+	private Professor p;
+}
+public class Inscricao {
+	private Aluno a;
+	private Turma t;
+}
+public class Disciplina {
+	private LinkedList<Turma> lista;
+}
